@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Calculator</title>
+</head>
+<body>
+    <h1> CALCULATOR</h1>
+    <div id="Calculator">
+      <form action="#">
+        <!--display the answer in the calculator-->
+       <input id="display" type="text" value="0"/>
+
+       <!--row 1 buttons start-->
+       <div id="buttons">
+           <div class="rows">
+               <button id="7" value="7" onclick=val(this.value)>7</button>
+               <button id="8" value="8" onclick=val(this.value)>8</button>
+               <button id="9" value="9" onclick=val(this.value)>9</button>
+               <button id="+" value="+" onclick=val(this.value)>+</button>
+               <button id="sign" value="sign" onclick=signopposite()>+/-</button>
+               <button id="ans" class="specialbutton" value="ans" onclick=anssave()>ANS</button>
+            </div>
+       <!--row 1 buttons end--> 
+       
+       <!--row 2 buttons start-->
+           
+           <div class="rows">
+            <button id="4" value="4" onclick=val(this.value)>4</button>
+            <button id="5" value="5" onclick=val(this.value)>5</button>
+            <button id="6" value="6" onclick=val(this.value)>6</button>
+            <button id="-" value="-" onclick=val(this.value)>-</button>
+            <button id="opening_bracket" value="(" onclick=val(this.value)>(</button>
+            <button id="closing_bracket" value=")" onclick=val(this.value)>)</button>
+        </div>
+        <!--row 2 buttons end-->
+        
+        <!--row 3 buttons start-->
+        
+        <div class="rows">
+            <button id="1" value="1" onclick=val(this.value)>1</button>
+            <button id="2" value="2" onclick=val(this.value)>2</button>
+            <button id="3" value="3" onclick=val(this.value)>3</button>
+            <button id="*" value="*" onclick=val(this.value)>*</button>
+            <button id="reset" class="specialbutton" value="reset" onclick=resetvalue()>RESET</button>
+        </div>
+        <!--row 3 buttons end-->
+
+        <!--row 4 buttons start-->
+        <div class="rows">
+            <button id="0" value="0" onclick=val(this.value)>0</button>
+            <button id="." value="." onclick=val(this.value)>.</button>
+            <button id="/" value="/" onclick=val(this.value)>/</button>
+            <button id="=" value="=" onclick=displayans()>=</button>
+            <button id="back" class="specialbutton" value="AC" onclick=backvalue()>BACK</button>
+            </div>
+        <!--row 4 buttons end-->
+       
+    
+     </form>
+  </div>
+
+<script src="javascript.js"></script>                           
+</body>
+</html>
